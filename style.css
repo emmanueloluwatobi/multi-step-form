@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+.main-page{
+    padding: 2vh 5vw;
+    justify-content: flex-start;
+}
+.navigation{
+    background:url(image/bg-sidebar-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    height: 95.5vh;
+    width: 22vw;
+    border-radius: 10px;
+    padding: 2.5%;
+}
+.each-steps{
+    text-align: start;
+    margin-bottom: 30px;
+}
+.each-steps a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    padding: 4px 12px;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+}
+.each-steps a.active {
+    background: #009efa;
+    color: #000053;
+}
+.step-info{
+    margin-left: 15px;
+}
+.step-info p{
+    font-size: .9rem;
+    color: #cfcfcf;
+}
+.step-info h3{
+    font-size: .85rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.main-page .step{
+    display: none;
+}
+.step.active {
+    display: block;
+}
+.main-page .page-info{
+    margin-left: 15vw;
+    width: 38vw;
+    font-family: 'Ubuntu';
+}
+.page-info h2{
+    font-family: 'Ubuntu';
+    padding-bottom: 7px;
+    font-size: 2rem;
+    color: #000053;
+}
+.page-info .sub-title{
+    font-family: 'Ubuntu';
+    padding-bottom: 35px;
+    font-size: .9rem;
+    color: #8b8b8b;
+
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form label{
+    color: #000053;
+    font-size: .9rem;
+    font-weight: 500;
+}
+form input{
+    margin-top: 3px;
+    padding: 10px 9px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #cfcfcf;
+}
+
+.next{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+.next-home{
+    justify-content: end;
+}
+.prev-btn button{
+    outline: 0;
+    border: 0;
+    background: transparent;
+    font-weight: 500;
+    font-size: .9rem;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+.next-btn button{ 
+    cursor: pointer;
+    color: #fff;
+    background: #000053;
+    padding: 10px 20px;
+    border-radius: 7px;
+    outline: 0;
+    border: 0;
+    font-size: .9rem;
+}
+
+
+.option-div{
+    justify-content: space-between;
+}
+.option-div .active-option{
+    border: 1px solid #6363ec !important;
+    background: #f3f3f393;
+}
+.each-option:hover{
+    border: 1px solid #6363ec !important;
+}
+.option-div .each-option{
+    border:  1px solid #cfcfcf;
+    border-radius: 6px;
+    width: 11.5vw;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0 20px 10px;
+    cursor: pointer;
+}
+.each-option img{
+    margin-bottom: 30px;
+}
+.each-option div{
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.each-option div span{
+    font-size: .8rem;
+    color: #000053;
+    font-weight: 500;
+    display: none;
+}
+.each-option h3{
+    font-size: .95rem;
+    font-weight: 500;
+    color: #000053;
+}
+.each-option p{
+    font-size: .8rem;
+    color: #8b8b8b;
+}
+.month-year-div{
+    margin-top: 35px;
+    background: #f3f3f393;
+    justify-content: center;
+    padding: 12px 0;
+    border-radius: 7px;
+}
+.month-year-div .toggle-btn{
+    margin: 0 12px;
+    background: #000053 !important;
+    width: 40px;
+    display: flex;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    transition: padding-left 0.5s;
+}
+.month-year-div .toggle-btn span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff !important;
+    border-radius: 50%;
+}
+.toggle-btn.toggle-btn-on{
+    padding-left: 23px;
+}
+.month-year-div p{
+    font-weight: 500;
+    font-size: .85rem;
+    color: #8b8b8b;
+}
+.month-year-div .active-time{
+    color: #000053;
+}
+
+
+.service-section{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.each-service, .each-option div{
+    width: 100%;
+    border: 1.8px solid #8b8b8b;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    justify-content: space-between;
+}
+.active-service{
+    border: 1.8px solid #000053;
+    background: #009efa0a;
+}
+.each-service .service-info{
+    margin-left: 15px;
+}
+.service-info h3{
+    color: #000053;
+    font-size: 1.1rem;
+}
+.service-info p{
+    color: #8b8b8b;
+    font-size: .9rem;
+}
+.price-time p{
+    color: #000053;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.summary{
+    background: #009efa0a;
+    padding: 19px 26px;
+    border-radius: 8px;
+}
+.summary .top-summary, .buttom-summary div, .total-payment{
+    justify-content: space-between;
+}
+.summary hr{
+    outline: 0;
+    border: .2px solid #cfcfcf;
+    margin: 15px 0;
+}
+.top-summary h3{
+    color: #000053;
+    font-size: 1rem;
+}
+.top-summary a{
+    text-decoration: underline;
+    font-size: .8rem;
+}
+.top-summary span{
+    font-size: .95rem;
+    font-weight: 700;
+    color: #000053;
+}
+.buttom-summary div{
+    margin: 10px 0;
+}
+.buttom-summary p{
+    font-size: .9rem;
+    color: #8b8b8b;
+}
+.buttom-summary span{
+    color: #000053;
+    font-size: .8rem;
+}
+.total-payment {
+    padding: 20px;
+}
+.total-payment P{
+    font-size: .85rem;
+    color: #8b8b8b;
+}
+.total-payment h3{
+    color: #2e2eeb;
+    font-size: 1rem;
+}
+.step-5{
+    text-align: center;
+    align-items: center;
+}
+.step-5 p{
+    color: #8b8b8b;
+    font-size: .9rem;
+}
+
+
+@media only screen and (max-width: 900px){
+    .navigation{
+        width: 28vw;
+    }
+    .main-page .page-info{
+        margin-left: 10vw;
+        width: 48vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    .navigation{
+        width: 35vw;
+        padding: 4.5%;
+    }
+    .main-page .page-info{
+        margin-left: 5vw;
+        width: 55vw;
+    }
+}
+@media only screen and (max-width: 500px){
+    body{
+        background: #009efa0a;
+    }
+    .main-page{
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 90px !important;
+    }
+    .each-steps{
+        text-align: center;
+        align-items: center;
+        text-align: start;
+        margin-bottom: 70px;
+    }
+    .each-steps a {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid #f0f0f0;
+        margin: 0 10px;
+    }
+    .navigation{
+        background: url(image/bg-sidebar-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        height: 30vh;
+        width: 100vw;
+        border-radius: 0 !important;
+        padding: 2.5%;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation .step-info{
+        display: none;
+    }
+    .main-page .page-info{
+        width: 85vw;
+        position: absolute;
+        top: 15vh;
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px 30px;
+        margin: 0;
+    }
+    .page-info .sub-title {
+        padding-bottom: 15px;
+    }
+    form div {
+        margin-bottom: 10px;
+    }
+    .next {
+        margin-top: 7vh;
+        display: flex;
+    }
+    .option-div{
+        flex-direction: column;
+    }
+    .option-div .each-option{
+        display: flex !important;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px 0 10px 10px;
+    }
+    .each-option img {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    .month-year-div {
+        margin-top: 0;
+    }
+    .service-info h3 {
+        font-size: 1rem;
+    }
+    .service-info p {
+        font-size: .8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
